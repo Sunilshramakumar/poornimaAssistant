@@ -1,0 +1,62 @@
+{% extends 'Assistant/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="col-sm-10" style ="width : 100%;">
+    {% comment %} <h3 class="my-5" style = "font-family:times new Roman;"></h3> {% endcomment %}
+    <div class="col-sm-12">
+        <h4 class="text-center alert alert-info" style = "font-family:times new Roman; background-color: black; color: white; margin-top:30px; margin-top:30px;">Profile Details</h4>
+        {% if stu %}
+            <h4 style = "font-family:times new Roman;">Data</h4>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col" style = "font-family:times new Roman;">Id</th>
+                    <th scope="col" style = "font-family:times new Roman;">Name</th>
+                    <th scope="col" style = "font-family:times new Roman;">Email</th>
+                    <th scope="col" style = "font-family:times new Roman;">Designation</th>
+                    <th scope="col" style = "font-family:times new Roman;">Specialization</th>
+                    <th scope="col" style = "font-family:times new Roman;">Achivements</th>
+                    <th scope="col" style = "font-family:times new Roman;">Edit</th>
+                    <th scope="col" style = "font-family:times new Roman;">Delete</th>
+
+
+                  </tr>
+                </thead>
+                <tbody>
+                    {% for st in stu %}
+                        <tr>
+                            <th scope="row">{{st.id}}</th>
+                            <td style = "font-family:times new Roman;">{{st.name}}</td>
+                            <td style = "font-family:times new Roman;">{{st.email}}</td>
+                            <td style = "font-family:times new Roman;">{{st.designation}}</td>
+                            <td style = "font-family:times new Roman;">{{st.specialization}}</td>
+                            <td style = "font-family:times new Roman;">{{st.achivements}}</td>
+                            <td>
+                                <a href="{% url 'updatedata' st.id %}" class="btn btn-warning btn-sm" style = "font-family:times new Roman; background-color: black; color: white;"><div>Edit</div></a>
+                                
+                            </td>
+                            <td>
+                                <form action="{% url 'deletedata' st.id %}" method="post" class="d-inline">
+                                    {% csrf_token %}
+                                    <input type="submit" class="btn btn-danger" value="Delete" style = "font-family:times new Roman; background-color: black; color: white;">
+                                </form>
+                            </td>    
+
+
+                        </tr>
+                    {% endfor %}
+                </tbody>
+              </table>
+              <a class="btn btn-info" href= '/profile/' style = "font-family:times new Roman; background-color: black; color: white;">Add new </a></center>
+              
+        {% else %}
+            <h4 class="text-center alert alert-warning">No Record</h4>
+            <center><a class="btn btn-info" href= '/profile/' style = "font-family:times new Roman;">Back to Profile</a></center>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock content %}
+

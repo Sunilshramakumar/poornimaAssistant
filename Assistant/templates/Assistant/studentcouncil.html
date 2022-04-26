@@ -1,0 +1,160 @@
+{% extends 'Assistant/base.html' %}
+{% load static %}
+{% block content %}
+<div class="col-sm-10">
+    <h3 class="my-5" style = "font-family:times new Roman;"></h3>
+        {% comment %} <center>
+            <a href="{% url 'profile' %}" class="btn btn-primary" style = "font-family:times new Roman; background-color: black; color: white; margin-top:55px;">Back To Profile</a>
+        </center> {% endcomment %}
+    <center>
+        <div class="card-header" style = "font-size: 25px; background-color : black; color : white; font-family : times new roman;">
+            Student's Council
+        </div>
+    </center>
+    <div class="container">
+      <div class="row" style = "margin-top : 15px;">
+        <div class="col-sm" style = "height : 129px; background-color : grey; margin-top: 8px; width : 240px;">
+          <img class="card-img-top" src="{% static 'Assistant/img/aptineus.jpg' %}" style="width: 240px; height: 129px;">
+          <div style = "width : 240px; height : 25px; margin-top : 5px;">
+            <center><h6 style = "font-family : times and new roman;"><b>Aptinus Club</b></h6></center>
+          </div>
+        </div>
+        
+        <div class="col-sm" style = "height : 129px; background-color : grey; margin-top: 8px; width : 240px;">
+          <img class="card-img-top" src="{% static 'Assistant/img/Codium.jpg' %}" style="width: 240px; height: 129px;">
+          <div style = "width : 240px; height : 25px; margin-top : 5px;">
+            <center><h6 style = "font-family : times and new roman;"><b>Codium Club</b></h6></center>
+          </div>
+        </div>
+        <div class="col-sm" style = "height : 129px; background-color : grey; margin-top: 8px; width : 240px;">
+          <img class="card-img-top" src="{% static 'Assistant/img/cystron.png' %}" style="width: 240px; height: 129px;">
+          <div style = "width : 240px; height : 25px; margin-top : 5px;">
+            <center><h6 style = "font-family : times and new roman;"><b>Cytron Club</b></h6></center>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row" style = "margin-top : 55px;">
+        <div class="col-sm" style = "height : 129px; background-color : grey; margin-top: 8px; width : 240px;">
+          <img class="card-img-top" src="{% static 'Assistant/img/elecri_infinity_club.jpg' %}" style="width: 240px; height: 129px;">
+          <div style = "width : 240px; height : 25px; margin-top : 5px;">
+            <center><h6 style = "font-family : times and new roman;"><b>Electrinfinity Club</b></h6></center>
+          </div>
+        </div>
+        
+        <div class="col-sm" style = "height : 129px; background-color : grey; margin-top: 8px; width : 240px;">
+          <img class="card-img-top" src="{% static 'Assistant/img/et_career.jpg' %}" style="width: 240px; height: 129px;">
+          <div style = "width : 240px; height : 25px; margin-top : 5px;">
+            <center><h6 style = "font-family : times and new roman;"><b>Engineering & Career Awareness Club</b></h6></center>
+          </div>
+        </div>
+        <div class="col-sm" style = "height : 129px; background-color : grey; margin-top: 8px; width : 240px;">
+          <img class="card-img-top" src="{% static 'Assistant/img/ep.jpg' %}" style="width: 240px; height: 129px;">
+          <div style = "width : 240px; height : 25px; margin-top : 5px;">
+            <center><h6 style = "font-family : times and new roman;"><b>Entrepreneurship Club</b></h6></center>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row" style = "margin-top : 75px;">
+        <div class="col-sm" style = "height : 129px; background-color : grey; margin-top: 8px; width : 240px;">
+          <img class="card-img-top" src="{% static 'Assistant/img/green_club.jpg' %}" style="width: 240px; height: 129px;">
+          <div style = "width : 240px; height : 25px; margin-top : 5px;">
+            <center><h6 style = "font-family : times and new roman;"><b>Green Club</b></h6></center>
+          </div>
+        </div>
+        
+        <div class="col-sm" style = "height : 129px; background-color : grey; margin-top: 8px; width : 240px;">
+          <img class="card-img-top" src="{% static 'Assistant/img/goodminds_logo.jpg' %}" style="width: 240px; height: 129px;">
+          <div style = "width : 240px; height : 25px; margin-top : 5px;">
+            <center><h6 style = "font-family : times and new roman;"><b>Goodminds Club</b></h6></center>
+          </div>
+        </div>
+        <div class="col-sm" style = "height : 129px; background-color : grey; margin-top: 8px; width : 240px;">
+          <img class="card-img-top" src="{% static 'Assistant/img/helping.png' %}" style="width: 240px; height: 129px;">
+          <div style = "width : 240px; height : 25px; margin-top : 5px;">
+            <center><h6 style = "font-family : times and new roman;"><b>Helping Hand Group</b></h6></center>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row" style = "margin-top : 55px;">
+        <div class="col-sm" style = "height : 129px; background-color : grey; margin-top: 8px; width : 240px;">
+          <img class="card-img-top" src="{% static 'Assistant/img/literary_club.jpg' %}" style="width: 240px; height: 129px;">
+          <div style = "width : 240px; height : 25px; margin-top : 5px;">
+            <center><h6 style = "font-family : times and new roman;"><b>Literary Club</b></h6></center>
+          </div>
+        </div>
+        
+        <div class="col-sm" style = "height : 129px; background-color : grey; margin-top: 8px; width : 240px;">
+          <img class="card-img-top" src="{% static 'Assistant/img/origin-club.jpg' %}" style="width: 240px; height: 129px;">
+          <div style = "width : 240px; height : 25px; margin-top : 5px;">
+            <center><h6 style = "font-family : times and new roman;"><b>Origin Club</b></h6></center>
+          </div>
+        </div>
+        <div class="col-sm" style = "height : 129px; background-color : grey; margin-top: 8px; width : 240px;">
+          <img class="card-img-top" src="{% static 'Assistant/img/placement_club.jpg' %}" style="width: 240px; height: 129px;">
+          <div style = "width : 240px; height : 25px; margin-top : 5px;">
+            <center><h6 style = "font-family : times and new roman;"><b>Placement Club</b></h6></center>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row" style = "margin-top : 55px;">
+        <div class="col-sm" style = "height : 129; background-color : grey; margin-top: 8px; width : 240px;">
+          <img class="card-img-top" src="{% static 'Assistant/img/pupils.jpg' %}" style="width: 240px; height: 129;">
+          <div style = "width : 240px; height : 25px; margin-top : 5px;">
+            <center><h6 style = "font-family : times and new roman;"><b>Pupil's Club</b></h6></center>
+          </div>
+        </div>
+        
+        <div class="col-sm" style = "height : 129; background-color : grey; margin-top: 8px; width : 240px;">
+          <img class="card-img-top" src="{% static 'Assistant/img/robotics-1st.png' %}" style="width: 240px; height: 129;">
+          <div style = "width : 240px; height : 25px; margin-top : 5px;">
+            <center><h6 style = "font-family : times and new roman;"><b>Robotics Club</b></h6></center>
+          </div>
+        </div>
+        <div class="col-sm" style = "height : 129; background-color : grey; margin-top: 8px; width : 240px;">
+          <img class="card-img-top" src="{% static 'Assistant/img/personal_growth.jpg' %}" style="width: 240px; height: 129;">
+          <div style = "width : 240px; height : 25px; margin-top : 5px;">
+            <center><h6 style = "font-family : times and new roman;"><b>Shikhar Club</b></h6></center>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row" style = "margin-top : 55px;">
+        <div class="col-sm" style = "height : 129; background-color : grey; margin-top: 8px; width : 240px;">
+          <img class="card-img-top" src="{% static 'Assistant/img/Tecnical-Club.png' %}" style="width: 240px; height: 129;">
+          <div style = "width : 240px; height : 25px; margin-top : 5px;">
+            <center><h6 style = "font-family : times and new roman;"><b>Technical Club</b></h6></center>
+          </div>
+        </div>
+        
+        <div class="col-sm" style = "height : 129; background-color : grey; margin-top: 8px; width : 240px;">
+          <img class="card-img-top" src="{% static 'Assistant/img/udaan_club_logo.jpg' %}" style="width: 240px; height: 129;">
+          <div style = "width : 240px; height : 25px; margin-top : 5px;">
+            <center><h6 style = "font-family : times and new roman;"><b>Udaan Club</b></h6></center>
+          </div>
+        </div>
+        <div class="col-sm" style = "height : 129; background-color : grey; margin-top: 8px; width : 240px;">
+          <img class="card-img-top" src="{% static 'Assistant/img/dance logo.png' %}" style="width: 240px; height: 129;">
+          <div style = "width : 240px; height : 25px; margin-top : 5px;">
+            <center><h6 style = "font-family : times and new roman;"><b>Dance</b></h6></center>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+{% endblock content %}
+

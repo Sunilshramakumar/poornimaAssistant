@@ -1,0 +1,14 @@
+{% extends 'Assistant/base.html' %}
+{% block content %}
+    <div class="row">
+        <div class="col sm-8 offset-2">
+            <h4 class="alert alert-info" style = "font-family:times new Roman; background-color: black; color: white; margin-top:30px;">Update Calendarent Information</h4>
+            <form action="" method="post">
+                {% csrf_token %}
+                {{form.as_p}}
+                <input type="submit" class="btn btn-success" value="Update" style = "font-family:times new Roman; background-color: black; color: white;">
+                <a href="{% url 'calendar' %}" class="btn btn-info" style = "font-family:times new Roman; background-color: black; color: white;">Back To Calendar  </a>
+            </form>
+        </div>
+    </div>
+{% endblock content %}

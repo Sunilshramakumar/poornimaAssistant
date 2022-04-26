@@ -1,0 +1,57 @@
+{% extends 'Assistant/base.html' %}
+{% load static %}
+{% block content %}
+<div class="col-sm-10">
+    <h3 class="my-5" style = "font-family:times new Roman;"></h3>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+        <h4 class="text-center alert alert-info"  style = "font-family:times new Roman; background-color: black; color: white;">Important Notice</h4>
+        <form action="" method = 'POST'>
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" class="btn btn-success" value="Add" style = "font-family:times new Roman; background-color: black; color: white;">
+            <a href="{% url 'news' %}" class="btn btn-primary" style = "font-family:times new Roman; background-color: black; color: white;">Back To News</a>
+        </form>
+
+    </div>
+
+    <div class="class col-sm-7 offset-1">
+        <h4 class="text-center alert alert-info" style = "font-family:times new Roman; background-color: black; color: white;">Show Notice Here</h4>
+        {% if ntu %}
+            <table class="table table-hover" style = "font-family:times new Roman; background-color: grey; color: white; border: 1px solid black;">
+                <thead>
+                    <tr style = "font-family: times new roman; font-family:times new Roman; background-color: grey; color: white;">
+                        <th scope="col"  style = "font-family:times new Roman; background-color: grey; color: black; font-size: 16px;">Id</th>
+                        <th scope="col"  style = "font-family:times new Roman; background-color: grey; color: black; font-size: 16px;">Notice</th>
+                        <th scope="col"  style = "font-family:times new Roman; background-color: grey; color: black; font-size: 16px;">Edit</th>
+                        <th scope="col"  style = "font-family:times new Roman; background-color: grey; color: black; font-size: 16px;">Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for nt in ntu %}
+                        <tr>
+                            <th scope="row">{{nt.id}}</th>
+                            <td>{{nt.date}}</td>
+                            <td>{{nt.notice}}</td>
+                            <td>
+                                <a href="{% url 'noticeupdatedata' nt.id %}" class="btn btn-warning btn-sm" style = "font-family:times new Roman; background-color: black; color: white;">Edit</a>
+                            </td>
+                            <td>
+                                <form action="{% url 'noticedeletedata' nt.id %}" method="post" class="d-inline" >
+                                    {% csrf_token %}
+                                    <input type="submit" class="btn btn-danger" value="Delete" style = "font-family:times new Roman; background-color: black; color: white; height: 34px;">
+                                </form>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <h4 text-center alert alert-warning style = "font-family:times new Roman;">No Notice For Show</h4>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock content %}
+

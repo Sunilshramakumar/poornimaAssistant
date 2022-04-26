@@ -1,0 +1,45 @@
+{% extends 'Assistant/base.html' %}
+{% load static %}
+{% block content %}
+<div class="col-sm-10">
+    <h3 class="my-5" style = "font-family:times new Roman;"></h3>
+    <center>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'Assistant/img/calenderjpg.png' %}" alt="" srcset="">
+                        <div class="card-body" style="width: 18rem;" >
+                            <p class="card-text" style = "font-family:times new Roman;">Every college student knows the importance of 11:59. So be update!!</p>
+                            <a class="btn btn-primary" href= '/calender/' style = "font-family:times new Roman; height: 40px; background-color: black; color: white;">Calender</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'Assistant/img/eventjpg.PNG' %}" alt="" srcset="">
+                        <div class="card-body" style="width: 18rem;" >
+                            <p class="card-text" style = "font-family:times new Roman;">Every college student knows the importance of 11:59. So be update!!</p>
+                            <a class="btn btn-primary" href= '/event/' style = "font-family:times new Roman; height: 40px; background-color: black; color: white;">Events</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'Assistant/img/noticejpg.png' %}" alt="" srcset="">
+                        <div class="card-body" style="width: 18rem;" >
+                            <p class="card-text" style = "font-family:times new Roman;">Every college student knows the importance of 11:59. So be update!!</p>
+                            <a class="btn btn-primary" href= '/notice/' style = "font-family:times new Roman; height: 40px; background-color: black; color: white;">Notice</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <center>
+            <a href="{% url 'profile' %}" class="btn btn-primary" style = "font-family:times new Roman; background-color: black; color: white; margin-top:55px;">Back To Profile</a>
+        </center>
+    </center>
+</div>
+
+{% endblock content %}
+

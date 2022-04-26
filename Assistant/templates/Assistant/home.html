@@ -1,0 +1,133 @@
+{% extends 'Assistant/base.html' %}
+{% load static %}
+{% block content %}
+<div class="col-sm-10">
+    <h3 class="my-5" style = "font-family:times new Roman;"></h3>
+    <div class="card text-center" style = "height : 450px; font-family:times new Roman; margin-left : 33px; width : 1250px; background-color : grey;">
+        <div class="card-header" style = "font-size: 25px; background-color : black; color : white;">
+          Messages from pillars of Poornima Institute of Engineering & Technology
+        </div>
+        <div class="card-body" style = "background-color : grey;">
+          <h2 class="card-title">Vision & Mission</h2>
+          <hr>
+          <div>
+            <p style = "color : white; margin-top : 21px; font-size : 17px; text-align : justify;">To create knowledge based society with scientific temper through cutting-edge technologies, innovative research and to become valuable resource for enriching mankind.To provide an environment that will allow students and faculty members to be skilled in creation and implementation of new ideas. To provide platform to improve questioning, observing, testing, analyzing and communication skills. To provide qualitative education and generate new knowledge with integration of emerging technologies and research. To practice and promote high standard of potential ethics, transparency and accountability.
+
+            </p>
+          </div>
+          
+          {% comment %} <h5 class="card-text">To create knowledge based society with scientific temper through cutting-edge technologies, innovative research and to become valuable resource for enriching mankind.</h5>
+          <p class="card-text">1. To provide an environment that will allow students and faculty members to be skilled in creation and implementation of new ideas.</p>
+            <p class="card-text">2. To provide platform to improve questioning, observing, testing, analyzing and communication skills.</p>
+            <p class="card-text">3. To provide qualitative education and generate new knowledge with integration of emerging technologies and research.</p>
+            <p class="card-text">4. To practice and promote high standard of potential ethics, transparency and accountability.</p> {% endcomment %}
+          {% comment %} <a href="#" class="btn btn-primary">Signup</a> {% endcomment %}
+          <a class="btn btn-primary" href= '/update/' style = "font-family:times new Roman; height: 40px; background-color: black;">Profile</a>
+        </div>
+        <div class="card-footer text-muted">
+        </div>
+    </div>
+</div>
+<div class="col-sm-10" style = "background-color : grey;">
+  <h3 class="my-5" style = "font-family:times new Roman;"></h3>
+  <div class="card text-center" style = "height : 450px; font-family:times new Roman; margin-left : 33px; width : 1250px; background-color : grey;">
+      <div class="card-header" style = "font-size: 25px; background-color : black; color : white;">
+        From the desk of Chairman (Emeritus)
+      </div>
+        <div class = "row" style = "background-color : green; width :  1250px; height:300px; margin-left : -1px; margin-top: 4px;">
+          <div class = "col-sm-3" style = "background-color : black; height : 300px; width : 250px;">
+            <img class="card-img-top" src="{% static 'Assistant/img/chairman.png' %}" alt="Card image cap" style="width: 146px; height: 146px; margin-top: 15px;">
+            <div class="card-body" style = 'height : 140px;'>
+              <h6 class="card-title" style = "color : white;" >Dr. S.M. Seth</h6>
+              <h6 class="card-title" style = "color : white;">Chairman (Emeritus)</h6>
+              <h6 class="card-title" style = "color : white;"><marquee>Former Director, National Institute of Hydrology, Roorkee </marquee></h6>
+            </div>
+          </div>
+          <div class = "col-sm-8" style = "background-color : grey; height : 300px; width : 1000px;">
+            <p style = "color : white; margin-top : 21px; font-size : 17px; text-align : justify;">Dr. S. M. Seth, a teacher, researcher and administrator, has excellent academic career in Civil Engineering, specializing in Dam Design, Irrigation Engineering and Hydraulics. He did his Ph.D. in Hydrology, as a commonwealth scholar, from Victoria University of Manchester, UK in 1972. A major part of his teaching experience was at University of Jodhpur and University of Roorkee (now IIT Roorkee). As a teacher, he made significant contributions in development of Unesco Sponsored P.G. Course in Hydrology at University of Roorkee and has been examiner at various universities and IITs. Dr. Seth possesses professional experience of more than 55 years including teaching & research at Universities of Roorkee and Manchester (UK) and as Senior Scientist (14 years) and Director (7 years) at the National Institute of Hydrology (NIH), Roorkee covering different areas of hydraulics and hydrology. Dr. Seth, as a professional in the area of hydrology and water resources, has made significant contributions in establishment of NIH under Ministry of Water Resources, Government of India as a UNDP sponsored project and also in coordination of number of consultancy/ research projects including those sponsored by UNDP, World Bank, European Economic Community, WAPCOS and Govt. of India.</p>
+          </div>
+        </div>
+        <div class = "row" style = "background-color : grey; width :  1250px; height :50px; margin-top: 15px; margin-left : -1px;">
+          {% comment %} <h4 class = "card-title" style = "font-family : times new roman; margin-top : 10px;"><marquee>Jai Jai Poornima Sansthan</marquee></h4> {% endcomment %}
+        </div>
+  </div>
+
+</div>
+
+<div class="col-sm-10">
+  <h3 class="my-5" style = "font-family:times new Roman;"></h3>
+  <div class="card text-center" style = "height : 450px; font-family:times new Roman; margin-left : 33px; width : 1250px; background-color : grey;">
+      <div class="card-header" style = "font-size: 25px; background-color : black; color : white;">
+        From the desk of Chairman
+
+      </div>
+        <div class = "row" style = "background-color : green; width :  1250px; height:300px; margin-left : -1px; margin-top: 4px;">
+          <div class = "col-sm-8" style = "background-color : grey; height : 300px; width : 1000px;">
+            <p style = "color : white; margin-top : 21px; font-size : 17px; text-align : justify;">Mr. Shashikant Singhi is B.Arch. (Honors) from J.J. College of Architecture, Mumbai. He has professional expertise and wide ranging experience in various prestigious assignments for designing and construction of institution, public buildings and industrial houses. Shri. Shashikant Singhi was actively involved in architecture and project management consultancy during 1985-1999 in Jaipur. During this period he was responsible for timely completion of many large sized projects. His experience and understanding of working of educational institutions and its phase wise development process has helped making Poornima Institutions most functionally developed campuses.
+
+              From year 2000 he has been associated with Poornima Group of Colleges and has been responsible for planning, development and monitoring of all Poornima Institutions. He has fulfilled diversified needs of the development process including that of finance, approvals, admissions, and human resources development to strike overall satisfaction of all stakeholders.</p>
+          </div>
+
+          <div class = "col-sm-3" style = "background-color : black; height : 300px; width : 250px;">
+            <img class="card-img-top" src="{% static 'Assistant/img/chairperson.png' %}" alt="Card image cap" style="width: 146px; height: 146px; margin-top: 15px;">
+            <div class="card-body" style = 'height : 140px;'>
+              <h6 class="card-title" style = "color : white;">Shri. Shashikant Singhi</h6>
+              <h6 class="card-title" style = "color : white;"><marquee>Chairman</marquee></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="col-sm-10">
+  <h3 class="my-5" style = "font-family:times new Roman;"></h3>
+  <div class="card text-center" style = "height : 450px; font-family:times new Roman; margin-left : 33px; width : 1250px; background-color : grey;">
+      <div class="card-header" style = "font-size: 25px;  background-color : black; color : white;">
+        From the desk of Director
+      </div>
+        <div class = "row" style = "background-color : green; width :  1250px; height:300px; margin-left : -1px; margin-top: 4px;">
+          <div class = "col-sm-3" style = "background-color : black; height : 300px; width : 250px;">
+            <img class="card-img-top" src="{% static 'Assistant/img/rahul.jpg' %}" alt="Card image cap" style="width: 146px; height: 146px; margin-top: 15px;">
+            <div class="card-body" style = 'height : 140px;'>
+              <h6 class="card-title" style = "color : white;">Ar. Rahul Singhi</h6>
+              <h6 class="card-title" style = "color : white;"><marquee>Director, Poornima Group</marquee></h6>
+            </div>
+          </div>
+          <div class = "col-sm-8" style = "background-color : grey; height : 300px; width : 1000px;">
+            <p style = "color : white; margin-top : 21px; font-size : 17px; text-align : justify;">Mr. Rahul Singhi is the Co-Founder, Poornima University & Director, Poornima Group. He believes in the ideology of giving back to society and brings the same into action via educating students. In this interview he talks about the leadership style he follows, and how with an open mind it is easy to assess situations. Also, he focuses on the programs the university has to offer and how the university is aimed to move forward by achieving the mark of excellence in teaching, research and placements. He goes on to appreciate the efforts of faculty and staff members and the accolades they achieved by incorporating focussed teaching, learning and research environments that encourage innovation of new ideas. In the later segment he emphasizes on why challenges should be taken head on rather than cribbing about it and shares his success mantra for the students to strive the excellence in their lives.</p>
+          </div>
+        </div>
+  </div>
+</div>
+
+<div class="col-sm-10">
+  <h3 class="my-5" style = "font-family:times new Roman;"></h3>
+  <div class="card text-center" style = "height : 450px; font-family:times new Roman; margin-left : 33px; width : 1250px; background-color : grey;">
+      <div class="card-header" style = "font-size: 25px;  background-color : black; color : white;">
+        From the desk of Director/Principal
+
+      </div>
+        <div class = "row" style = "background-color : green; width :  1250px; height:300px; margin-left : -1px; margin-top: 4px;">
+          <div class = "col-sm-8" style = "background-color : grey; height : 300px; width : 1000px;">
+            <p style = "color : white; margin-top : 21px; font-size : 17px; text-align : justify;">Dr. Dinesh Goyal is working as Principal at revered Institute, namely Poornima Institute of Engineering & Technology. Acquiring an experience of 20 years in teaching, and perceive keen interest in research area relating Cloud Security, Image Processing and Information Security. With a mission to append more and better skill set, has organized short term training programs as Convener and Co-Convener within during this short career span. He has been instrument in obtaining accreditations for his institutions, from various agencies like NAAC & NBA, He has received Grants for Research, Development, Conference & workshops worth Rs. 24 Lakh, from agencies like AICTE, TEQIP etc. He has been awarded by “Elets Excellence Award 2017” at Higher Education & Human Resource Conclave by Higher Education Department of Government of Rajasthan.
+
+              From year 2000 he has been associated with Poornima Group of Colleges and has been responsible for planning, development and monitoring of all Poornima Institutions. He has fulfilled diversified needs of the development process including that of finance, approvals, admissions, and human resources development to strike overall satisfaction of all stakeholders.</p>
+          </div>
+
+          <div class = "col-sm-3" style = "background-color : black; height : 300px; width : 250px;">
+            <img class="card-img-top" src="{% static 'Assistant/img/principle.png' %}" alt="Card image cap" style="width: 146px; height: 146px; margin-top: 15px;">
+            <div class="card-body" style = 'height : 140px;'>
+              <h6 class="card-title" style = "color : white;">Dr. Dinesh Goyal</h6>
+              <h6 class="card-title" style = "color : white;"> <marquee>Director/Principal</marquee></h6>
+              {% comment %} <h6 class = "card-title" style = "color : white;"><marquee>Poornima Institute of Engineering & Technology</marquee></h6> {% endcomment %}
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+{% endblock content %}
+
